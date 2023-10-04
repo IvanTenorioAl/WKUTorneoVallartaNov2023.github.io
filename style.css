@@ -1,0 +1,10 @@
+    /* Default height for small devices */
+    #intro {
+        height: 100vh;
+    }
+
+/* Scroll design */
+    /* Para navegadores basados en WebKit (Chrome, Safari) */
+    ::-webkit-scrollbar {
+        width: 0px; /* Ancho del scroll vertical */
+    }
