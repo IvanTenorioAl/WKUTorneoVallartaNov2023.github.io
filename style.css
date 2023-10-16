@@ -1,7 +1,7 @@
     *{
         margin: 0;
         padding: 0;
-        font-family: 'Karate', sans-serif;
+        font-family: 'College Block', sans-serif;
         letter-spacing: 5px;
     }
     /* Scroll design */
@@ -9,6 +9,9 @@
         width: 0px;
     }
 
+    .ging {
+        font-family: 'Karate', sans-serif;
+    }
     .hero {
         background-image: url('imagenes/header.png');
         background-size: cover;
