@@ -4,7 +4,7 @@ function updateCounter() {
     var startDate = new Date('2023-10-04');
 
     // Define la fecha de finalización (4 de octubre de 2023)
-    var endDate = new Date('2023-11-04');
+    var endDate = new Date('2023-11-24');
 
     // Update the count down every 1 second
     var x = setInterval(function () {

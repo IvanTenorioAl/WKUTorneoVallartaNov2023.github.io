@@ -1,10 +1,158 @@
-    /* Default height for small devices */
-    #intro {
-        height: 100vh;
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Karate', sans-serif;
+        letter-spacing: 5px;
+    }
+    /* Scroll design */
+    ::-webkit-scrollbar {
+        width: 0px;
     }
 
-/* Scroll design */
-    /* Para navegadores basados en WebKit (Chrome, Safari) */
-    ::-webkit-scrollbar {
-        width: 0px; /* Ancho del scroll vertical */
+    .hero {
+        background-image: url('imagenes/header.png');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+        background: rgb(33,52,84);
+        border-radius: 15px 0px 15px 20px;
+        box-shadow: 0px 5px 10px 0px rgb(223, 201, 5);
+        background: linear-gradient(8deg, rgba(33,52,84,1) 0%, rgba(0,0,0,1) 48%, rgba(255,209,0,1) 100%);
+    }
+    .hero h2 {
+        font-size: 50px;
+        font-family: 'Karate Chop', sans-serif;
+    }
+    .hero p {
+        font-size: 40px;
+    }
+
+    .logoI {
+        width: 80px;
+        height: 80px;
+        box-shadow: 2px 3px 2px black;
+        border-radius: 50%;
+        background-color: yellow;
+        padding: 1px;
+        margin-bottom: 15px;
+    }
+    .logoI:hover {
+        scale: 1.1;
+    }
+
+    .yellowgradient {
+        width: 0;
+        height: 0;
+        border-left: 100vw solid transparent;
+        border-top: 13.9vw solid rgba(255,209,0,1);
+        background-color: #fff;
+    }
+
+    .customShadow {
+        box-shadow: 0px 5px 10px 0px rgb(0, 0, 0);
+    }
+    .customShadow:hover {
+        box-shadow: 0px 5px 10px 0px rgb(18, 77, 126);
+        scale: 1.1;
+    }
+
+    .torneo {
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    .pergamino-border {
+        background: #936F59;
+        padding: 10px;
+      }
+      
+      .pergamino {
+        background: #e4d2b3; /* Un color beige más claro */
+        border: 2px solid #b0907c; /* Un borde marrón claro */
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      
+      .pergamino-header {
+        background-color: #FFD700; /* Color amarillo */
+      }
+      
+      .pergamino-content {
+        background-color: #f9f6f6; /* Un tono de blanco ligeramente grisáceo */
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      
+      .pergamino-footer {
+        background-color: #FFD700; /* Color amarillo */
+      }
+
+    /* Para pantallas más pequeñas, por ejemplo, smartphones */
+
+    @media (max-width: 1280px) {
+        .hero h1 {
+            font-size: 40px;
+        }
+        .hero h2{
+            font-size: 30px;
+        }
+        .hero p {
+            font-size: 30px;
+        }
+    }
+
+    @media (max-width: 930px) {
+        .hero {
+            height: 50vh;
+        }
+        .hero h1 {
+            font-size: 30px;
+        }
+        .hero h2 {
+            font-size: 30px;
+        }
+        .hero p {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 760px) {
+        .hero {
+            height: 40vh;
+            width: auto;
+        }
+        .hero h1 {
+            font-size: 20px;
+        }
+        .hero h2 {
+            font-size: 20px;
+        }
+        .hero p {
+            font-size: 20px;
+        }
+    }
+
+
+    /* Para pantallas más pequeñas, por ejemplo, smartphones */
+    @media (max-width: 400px) {
+        .hero {
+            height: 33vh;
+        }
+        .hero h1 {
+            font-size: 15px;
+        }
+        .hero h2 {
+            font-size: 15px;
+        }
+        .hero p {
+            font-size: 15px;
+        }
     }

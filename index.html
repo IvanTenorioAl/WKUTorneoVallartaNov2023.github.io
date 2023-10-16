@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WKU Torneo Noviembre 2023</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
@@ -13,74 +12,135 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet"/>
-    
+    <!--Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Karate font-->
+    <link href="https://fonts.cdnfonts.com/css/karate" rel="stylesheet">
+    <!--positions font-->
+    <link href="https://fonts.cdnfonts.com/css/karate-chop" rel="stylesheet">
+    <!--animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"  />
+
 </head>
 <body>
-<!--Main Navigation-->
-<header>
-    <!-- Background image -->
-    <div id="intro" class="p-5 text-center bg-image shadow-1-strong" style="background-image: url('https://mdbootstrap.com/img/new/slides/205.jpg');">
-      <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
-        <div class="d-flex justify-content-center align-items-center h-100">
-          <div class="text-white px-4">
-            <h1 class="mb-3">Dias hasta el Torneo!</h1>
-            <!-- Time Counter -->
-            <h3 id="time-counter" class="border border-light my-4 p-4"></h3>
-            <!-- Texto -->
-            <h4>Preparate</h4>
-            <p>El Torneo esta por empezar</p>
-            <a class="btn btn-outline-light btn-lg m-2" href="#" target="_blank" role="button">Suscribete</a>
-          </div>
+  <header>
+    <div class="hero border border-warning">
+      <div class="text-center animate__animated animate__fadeIn">
+        <h1 class="animate__animated animate__tada p-2 customShadow">¥ ¡Dias hasta el Torneo! ¥</h1>
+        <div class="container px-sm-0 px-lg-5 bg-black bg-opacity-50">
+          <p id="time-counter" class="lead w-auto rounded mx-auto placeholder-wave animate__animated animate__pulse animate__slower"></p>
         </div>
+        <h2>s :2 $</h2>
       </div>
     </div>
-    <!-- Background image -->
   </header>
-  <!--Main Navigation-->
 
-  <!--Main layout-->
-  <main class="mt-5">
-    <div class="container">
+    <!--Main layout-->
+  <div class="yellowgradient"></div>
+
+  <main class="container" style="margin-top: -10vw;">
       <!--Section: Content-->
       <section>
         <div class="text-center">
-            <h2>Productos</h2>
+            <h2 class="customShadow rounded">Equipo</h2>
         </div>
         <br>
-        <div class="row text-center">
-            <div class="col">
-                <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="https://source.unsplash.com/random/200x250" class="img-fluid rounded-start" alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Producto 1</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+        <div class="row">
+          <div class="col-md-3 w-33 mb-3 animate__animated animate__fadeInLeft">
+            <div class="card">
+              <img src="imagenes/camisa2.jpg" class="card-img customShadow" alt="camisa1">
             </div>
-            <div class="col">
-                <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="https://source.unsplash.com/random/200x250" class="img-fluid rounded-start" alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Producto 2</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+          </div>
+          <div class="col-md-3 w-33 mb-3 animate__animated animate__fadeInUp">
+            <div class="card ">
+              <img src="imagenes/camisa1.jpg" class="card-img customShadow" alt="camisa1">
             </div>
-            
+          </div>
+          <div class="col-md-3 w-33 mb-3 animate__animated animate__fadeInDown">
+            <div class="card">
+              <img src="imagenes/camisa3.jpg" class="card-img customShadow" alt="camisa1">
+            </div>
+          </div>
+          <div class="col-md-3 w-33 mb-3 animate__animated animate__fadeInRight">
+            <div class="card">
+              <img src="imagenes/medallas.jpg" class="card-img customShadow" alt="camisa1">
+            </div>
+          </div>
+        </div>
+        <br><br>
+        
+        <!--Torneos-->
+        <div class="mt-4">
+          <h3 class="text-center mb-3 animate__animated animate__fadeIn">Puerto Vallarta</h3>
+          <div class="d-flex justify-content-center flex-wrap">
+            <div class="card animate__animated animate__fadeInLeft m-3">
+              <img src="imagenes/torneo.jpg" class="card-img customShadow torneo" alt="torneo">
+            </div>
+            <div class="card animate__animated animate__fadeInUp m-3">
+              <img src="imagenes/caballitoMar.jpg" class="card-img customShadow torneo" alt="caballitodeMar">
+            </div>
+            <div class="card animate__animated animate__fadeInRight m-3">
+              <img src="imagenes/torneo1.jpg" class="card-img customShadow torneo" alt="torneo1">
+            </div>
+          </div>
+        </div>
+        <hr>
+        <!--Convocatoria-->
+        <div class="pergamino-border">
+          <div class="pergamino">
+            <div class="pergamino-content m-md-5 px-md-5">
+              <h3 class="text-center mb-3 animate__animated animate__fadeIn">Convocatoria</h3>
+              <h4>Sede:</h4>
+              <p>CANTO DEL SOL ALL INCLUSIVE , JOSE CLEMENTE OROZCO 125 , ZONA HOTELERA NORTE , 48333 PUERTO VALLARTA JAL. </p>
+              <h5> ¥ FECHA : 24-26 NOV 2023 </h5>
+              <br>
+              <h4>INSCRIPCIONES:</h4>
+              <p> QUEDAN ABIERTAS APARTIR DE LA PUBLICACION DE ESTA CONVOCATORIA, CERRANDO REGISTROS 20 DIAS ANTES DEL EVENTO.</p>
+              <p> ¥ NO TENEMOS REGISTROS EL DIA DEL EVENTO </p>
+              <h4>Categorias</h4>
+              <ul>
+                <li>FORMAS TRADICIONALES </li>
+                <li>FORMAS CREATIVAS </li>
+                <li>FORMAS CON ARMA </li>
+                <li>ABIERTAS </li>
+                <li>COMATE INDIVIDUAL </li>
+                <li>EQUIPOS </li>
+                <li>MMA </li>
+                <li>MUAY THAI </li>
+                <li>OPEN W EIGTH </li>
+                <li>KICK BOXING </li>
+              </ul>
+              <hr>
+              <h5>PREMIACIONES 1,2,3 FORMAS Y COMBATES</h5>
+              <h5>CONTACTO COMPLETO Y PELEAS PACTADAS CINTURON Y MEDALLA</h5>
+              <br>
+              <h3>Cuotas de Recuperacion</h3>
+              <ul>
+                <li>FORMA Y COMBATE . . . . . $800</li>
+                <li>ADICIONAL . . . . . $400</li>
+                <li>CUARTETA . . . . . $800</li>
+                <li>CONTACTO COMPLETO . . . . . $800</li>
+                <li>EQUIPOS . . . . . $1200</li>
+                <li>PROTESTA . . . . . $500</li>
+                <li>BRAZALETES DE COUCH . . . . . $400</li>
+                <li>ESPECTADOR . . . $200</li>
+              </ul>
+              <hr>
+              <h3 class="text-center">Aviso importante</h3>
+              <p>¥ EL COMPETIDOR DEBERA LLEGAR 30 MINUTOS ANTES DE SU COMPETENCIA.</p>
+              <p>¥ TODAS LAS CATEGORIAS SE DIVIDEN EN VARONIL Y FEMENIL.</p>
+              <p>¥ TODOS LOS COMPETIDORES DEBERAN LLEVAR COMPROBANTE DE EDAD DE LO CONTRARIO SI NO SE PRESENTA SERA DESCALIFICADO.</p>
+              <p>¥ LAS CUARTETAS SE LLEARAN ACABO DE 90 S. O 7PUNTOS.</p>
+              <p>¥ LAS PELEAS SE LLEVARAN ACABO DE 2 MINUTOS O 7 PUNTOS.</p>
+              <p>¥ PORTAR EQUIPO COMPLETO TOP TEN O  SIMILAR.</p>
+
+            </div>
+          </div>
+        </div>
+
+        <hr>
+        <!-- Formulario -->
+        <div class="text-center">
             <div class="text-center mt-5 mb-3">
                 <h2>Formulario</h2>
             </div>
@@ -90,9 +150,7 @@
                   <div>
                     <h4><strong>Registrate para obtener mas informaci&oacute;n</strong></h4>
                     <p class="text-muted">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
-                      eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi laborum
-                      sapiente illo possimus, commodi dignissimos obcaecati illum maiores corporis.
+                      Registrate al Torneo para ganar el cinturon de la Pacific Jewel
                     </p>
                   </div>
                 </div>
@@ -113,7 +171,7 @@
       
                     <!-- Submit button -->
                     <button type="submit" class="btn btn-primary btn-block mb-4">
-                      Suscribetee
+                      Suscribete
                     </button>
                   </form>
                 </div>
@@ -121,7 +179,17 @@
         </div>
       </section>
       <!--Section: Content-->
-    </div>
+
+
+      <figure class="text-end">
+        <blockquote class="blockquote">
+          <p>A well-known quote, contained in a blockquote element.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </figcaption>
+      </figure>
+
   </main>
   <!--Main layout-->
 
@@ -130,19 +198,37 @@
     <hr class="m-0" />
 
     <div class="text-center py-4 align-items-center">
-      <p>WKU CONTACTO</p>
-      <a href="#" class="btn btn-primary m-1" role="button" rel="nofollow"
+      <h4>DIRECTOR ESTATAL WKU JALISCO</h4>
+      <p>SENSEI VICTOR VAZQUEZ </p>
+      <p>¥ 322 3839 763 </p>
+      <a href="https://www.facebook.com/profile.php?id=100080985110044&locale=es_LA" class="btn btn-primary m-1" role="button" rel="nofollow"
         target="_blank">
         <i class="fab fa-facebook-f"></i>
       </a>
-      <a href="#" class="btn btn-primary m-1" role="button" rel="nofollow"
+      <a href="https://api.whatsapp.com/send?phone=3223839763" class="btn btn-success m-1" role="button" rel="nofollow"
         target="_blank">
         <i class="fa-brands fa-whatsapp fa-lg"></i>
       </a>
     </div>
+    
+    
+    <!--Logos-->
+    <div class="row m-0 text-center">
+      <div class="col-md-4"><img class="logoI" src="imagenes/logo1.jpg" alt="logo1"></div>
+      <div class="col-md-4"><img class="logoI" src="imagenes/logo3.jpg" alt="logo3"></div>
+      <div class="col-md-4"><img class="logoI" src="imagenes/logo5.jpg" alt="logo5"></div>
+    </div>
+    <div class="row m-0 text-center">
+      <div class="col-md-4"><img class="logoI" src="imagenes/logo4.jpg" alt="logo4"></div>
+      <div class="col-md-4"><img class="logoI" src="imagenes/logo2.jpg" alt="logo2"></div>
+      <div class="col-md-4"><img class="logoI" src="imagenes/logo6.jpg" alt="logo6"></div>
+    </div>
+
 
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">© 2023 WKU Torneo Noviembre 2023</div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 WKU Torneo Noviembre 2023
+    </div>
     <!-- Copyright -->
   </footer>
   <!--Footer-->
@@ -153,5 +239,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
     <!-- Javascript -->
     <script type="text/javascript" src="java.js"></script>
+    <!--Bootstrap 5-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
