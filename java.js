@@ -1,4 +1,4 @@
-// Función para mostrar el contador
+  // Función para mostrar el contador
 function updateCounter() {
     // Define la fecha de inicio (4 de octubre de 2023)
     var startDate = new Date('2023-10-04');
